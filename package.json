@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
      "cypress:open": "cypress open --browser chrome --e2e",
-    "cypress:runDefault": "cypress run --spec cypress/integration/pom/*.spec.js",
-    "cypress:chrome": "cypress run --browser chrome --spec cypress/integration/pom/*.spec.js",
-    "cypress:edge": "cypress run --browser edge --spec cypress/integration/pom/*.spec.js",
-    "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec cypress/integration/pom/*.spec.js --record --key 4bc50df7-5eee-4147-8eb3-ccea611c8d4b"
+    "cypress:runDefault": "cypress run --spec cypress/e2e/*cy.js",
+    "cypress:chrome": "cypress run --browser chrome --spec cypress/e2e/*cy.js",
+    "cypress:edge": "cypress run --browser edge --spec cypress/e2e/*cy.js",
+    "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec cypress/e2e/*cy.js --record --key 4bc50df7-5eee-4147-8eb3-ccea611c8d4b"
   },
   "author": "moynul",
   "license": "ISC",
